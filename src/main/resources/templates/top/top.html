@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+
+<link rel="stylesheet" th:href="@{/webjars/bootstrap/4.4.1-1/css/bootstrap.min.css}">
+<script th:src="@{/webjars/jquery/3.5.0/jquery.min.js}" defer></script>
+<script th:src="@{/webjars/bootstrap/4.4.1-1/js/bootstrap.min.js}" defer></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<title>My Task APP</title>
+
+</head>
+<body>
+
+
+<div style="width:300px;border:solid 1px black;margin-left:auto;margin-right:auto;margin-top:50px;">
+<h1 class="h3 mt-2 mb-3 font-weight-normal" style="text-align:center;">TOP</h1>
+<img th:src="@{/image/note-2527458_1920.jpg}" style="width:160px;height:160px;margin-left:auto;margin-right:auto;display:block;"/>
+<div class="d-flex justify-content-around">    
+  <form class="" th:action="@{/user/signup}" method="get" >
+    <input class="btn btn-outline-primary my-1" type="submit" value="登録"/>
+  </form>
+    
+  <form class="" th:action="@{/login}" method="get" >
+    <input class="btn btn-outline-danger my-1" type="submit" value="ログイン"/>
+  </form>   
+</div>
+
+</div>
+
+
+</body>
+</html>
